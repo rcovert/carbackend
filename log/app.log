@@ -228,3 +228,32 @@
 2020-10-29 17:16:11.463  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Started CardemoApplication in 1.75 seconds (JVM running for 97637.921)
 2020-10-29 17:16:11.518  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : Spring Boot example log record
 2020-10-29 17:16:11.519  INFO 26280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-29 17:18:10.303  INFO 26280 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-29 17:18:10.305  INFO 26280 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-29 17:18:10.418  INFO 26280 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-10-29 17:18:10.422  INFO 26280 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-10-29 17:18:10.563  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Starting CardemoApplication on USARRRCOVERT5 with PID 26280 (C:\fx\initialzr\cardemo\cardemo\target\classes started by rcovert in C:\fx\initialzr\cardemo\cardemo)
+2020-10-29 17:18:10.563  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : No active profile set, falling back to default profiles: default
+2020-10-29 17:18:10.951  INFO 26280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-10-29 17:18:10.975  INFO 26280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 3 JPA repository interfaces.
+2020-10-29 17:18:11.146  INFO 26280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2020-10-29 17:18:11.147  INFO 26280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-29 17:18:11.147  INFO 26280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-29 17:18:11.219  INFO 26280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-29 17:18:11.219  INFO 26280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 652 ms
+2020-10-29 17:18:11.334  INFO 26280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-10-29 17:18:11.338  INFO 26280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-10-29 17:18:11.638  INFO 26280 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-29 17:18:11.650  INFO 26280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-29 17:18:11.651  INFO 26280 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.context.ApplicationContext com.arc.cardemo.CardemoApplication.context
+2020-10-29 17:18:11.716  WARN 26280 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-29 17:18:11.748  INFO 26280 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.arc.cardemo.utils.LoggingHelper com.arc.cardemo.service.UserDetailServiceImpl.logThis
+2020-10-29 17:18:11.756  INFO 26280 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.context.ApplicationContext com.arc.cardemo.domain.DbHelper.context
+2020-10-29 17:18:11.802  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : security config:  Inside of security config http
+2020-10-29 17:18:11.810  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : security config:  Inside of security config cors config
+2020-10-29 17:18:11.811  INFO 26280 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b760ca3, org.springframework.security.web.context.SecurityContextPersistenceFilter@6060608f, org.springframework.security.web.header.HeaderWriterFilter@276c7dd7, org.springframework.web.filter.CorsFilter@4e8dc227, org.springframework.security.web.authentication.logout.LogoutFilter@6f5c01e, com.arc.cardemo.LoginFilter@4680b0f, com.arc.cardemo.AuthenticationFilter@4459b42f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@525bc6aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@161d9bf3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2fa1ab13, org.springframework.security.web.session.SessionManagementFilter@5a352522, org.springframework.security.web.access.ExceptionTranslationFilter@1915639a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52424673]
+2020-10-29 17:18:11.843  INFO 26280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-29 17:18:11.943  INFO 26280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2020-10-29 17:18:11.946  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Started CardemoApplication in 1.442 seconds (JVM running for 97758.405)
+2020-10-29 17:18:11.993  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : Spring Boot example log record
+2020-10-29 17:18:11.994  INFO 26280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
