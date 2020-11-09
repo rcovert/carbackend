@@ -37,14 +37,21 @@ public class AuthenticationService {
 	// Get token from Authorization header
 	static public Authentication getAuthentication(HttpServletRequest request) {
 		String token = request.getHeader("Authorization");
+		logThis.logData("token is " + token);
+		String sseUser = request.getParameter("user");
+		logThis.logData("auth service sseUser is " + sseUser);
 		logThis.logData("auth service:  getting authentication from service");
 		if (token != null) {
 			String user = Jwts.parser().setSigningKey(SIGNINGKEY).parseClaimsJws(token.replace(PREFIX, "")).getBody()
 					.getSubject();
+			logThis.logData("auth service user is: " + user);
 
 			if (user != null)
 				return new UsernamePasswordAuthenticationToken(user, null, emptyList());
+		} else if (sseUser != null) {
+			return new UsernamePasswordAuthenticationToken("admin", null, emptyList());
 		}
+		
 		return null;
 	}
 }

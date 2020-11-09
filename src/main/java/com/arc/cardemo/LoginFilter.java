@@ -1,6 +1,7 @@
 package com.arc.cardemo;
 
 import java.io.IOException;
+
 import java.util.Collections;
 
 import javax.servlet.FilterChain;
@@ -15,6 +16,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+import org.springframework.web.server.ServerWebExchange;
+import org.springframework.web.server.WebFilter;
+import org.springframework.web.server.WebFilterChain;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import com.arc.cardemo.domain.AccountCredentials;
@@ -24,7 +28,17 @@ import com.arc.cardemo.domain.User;
 import com.arc.cardemo.utils.LoggingHelper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class LoginFilter extends AbstractAuthenticationProcessingFilter {
+import reactor.core.publisher.Mono;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+import org.springframework.web.server.ServerWebExchange;
+import org.springframework.web.server.WebFilter;
+import org.springframework.web.server.WebFilterChain;
+import reactor.core.publisher.Mono;
+
+public class LoginFilter extends AbstractAuthenticationProcessingFilter  {
 
 	// @Autowired
 	private LoggingHelper logThis = new LoggingHelper();
@@ -70,6 +84,6 @@ public class LoginFilter extends AbstractAuthenticationProcessingFilter {
 			Authentication auth) throws IOException, ServletException {
 		AuthenticationService.addToken(res, auth.getName());
 	}
-	
+
 	
 }
