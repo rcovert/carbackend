@@ -6,12 +6,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.arc.cardemo.domain.Car;
 import com.arc.cardemo.domain.CarRepository;
+import com.arc.cardemo.utils.LoggingHelper;
 
+import lombok.extern.log4j.Log4j2;
+
+@Log4j2
 @RestController
 public class CarController {
 
 	@Autowired
 	private CarRepository repository;
+	
 
 	@RequestMapping("/cars")
 	public Iterable<Car> getCars() {

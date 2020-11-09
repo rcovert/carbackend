@@ -1,430 +1,213 @@
-2020-10-29 14:38:19.575  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
-2020-10-29 14:38:19.726  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
-2020-10-29 14:38:19.802  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
-2020-10-29 14:38:19.802  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
-2020-10-29 14:38:19.803  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
-2020-10-29 14:38:19.805  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
-2020-10-29 14:38:19.809  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : auth service:  adding token
-2020-10-29 14:38:19.927  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 14:38:19.930  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 14:38:19.933  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 14:38:19.934  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 14:53:32.317  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
-2020-10-29 14:53:32.317  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
-2020-10-29 14:53:32.323  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
-2020-10-29 14:53:32.324  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
-2020-10-29 14:53:32.324  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
-2020-10-29 14:53:32.324  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
-2020-10-29 14:53:32.327  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth service:  adding token
-2020-10-29 14:53:32.407  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 14:53:32.408  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 14:53:32.408  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 14:53:32.409  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 14:54:15.832  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 14:54:15.833  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 14:54:15.833  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 14:54:15.834  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 14:54:15.946  INFO 26280 --- [http-nio-8099-exec-9] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 14:54:15.946  INFO 26280 --- [http-nio-8099-exec-9] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 14:54:15.947  INFO 26280 --- [http-nio-8099-exec-9] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 14:54:15.948  INFO 26280 --- [http-nio-8099-exec-9] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 14:55:33.853  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
-2020-10-29 14:55:33.854  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
-2020-10-29 14:55:33.855  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
-2020-10-29 14:55:33.855  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
-2020-10-29 14:55:33.856  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
-2020-10-29 14:55:33.856  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
-2020-10-29 14:55:33.858  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth service:  adding token
-2020-10-29 14:55:33.940  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 14:55:33.941  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 14:55:33.941  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 14:55:33.941  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:00:11.599  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
-2020-10-29 15:00:11.600  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
-2020-10-29 15:00:11.601  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
-2020-10-29 15:00:11.601  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
-2020-10-29 15:00:11.602  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
-2020-10-29 15:00:11.603  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
-2020-10-29 15:00:11.605  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth service:  adding token
-2020-10-29 15:00:11.675  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:00:11.676  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:00:11.677  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:00:11.678  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:00:32.639  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
-2020-10-29 15:00:32.640  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
-2020-10-29 15:00:32.641  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
-2020-10-29 15:00:32.641  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
-2020-10-29 15:00:32.641  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
-2020-10-29 15:00:32.643  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
-2020-10-29 15:00:32.645  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth service:  adding token
-2020-10-29 15:00:32.707  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:00:32.708  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:00:32.708  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:00:32.708  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:02:51.083  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
-2020-10-29 15:02:51.084  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
-2020-10-29 15:02:51.085  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
-2020-10-29 15:02:51.085  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
-2020-10-29 15:02:51.085  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
-2020-10-29 15:02:51.086  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
-2020-10-29 15:02:51.088  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : auth service:  adding token
-2020-10-29 15:02:51.161  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:02:51.162  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:02:51.162  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:02:51.162  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:04:12.119  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
-2020-10-29 15:04:12.119  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
-2020-10-29 15:04:12.121  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
-2020-10-29 15:04:12.121  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
-2020-10-29 15:04:12.121  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
-2020-10-29 15:04:12.122  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
-2020-10-29 15:04:12.123  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : auth service:  adding token
-2020-10-29 15:04:12.182  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:04:12.182  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:04:12.183  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:04:12.183  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:04:28.668  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
-2020-10-29 15:04:28.668  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
-2020-10-29 15:04:28.669  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
-2020-10-29 15:04:28.669  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
-2020-10-29 15:04:28.670  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
-2020-10-29 15:04:28.671  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
-2020-10-29 15:04:28.673  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth service:  adding token
-2020-10-29 15:04:28.767  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:04:28.768  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:04:28.768  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:04:28.768  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:04:50.027  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
-2020-10-29 15:04:50.028  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
-2020-10-29 15:04:50.029  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
-2020-10-29 15:04:50.029  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
-2020-10-29 15:04:50.029  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
-2020-10-29 15:04:50.030  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
-2020-10-29 15:04:50.031  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : auth service:  adding token
-2020-10-29 15:04:50.101  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:04:50.102  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:04:50.102  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:04:50.103  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:05:30.601  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
-2020-10-29 15:05:30.601  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
-2020-10-29 15:05:30.602  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
-2020-10-29 15:05:30.603  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
-2020-10-29 15:05:30.603  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
-2020-10-29 15:05:30.605  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
-2020-10-29 15:05:30.606  INFO 26280 --- [http-nio-8099-exec-10] com.arc.cardemo.utils.LoggingHelper      : auth service:  adding token
-2020-10-29 15:05:30.668  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:05:30.668  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:05:30.669  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:05:30.669  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:05:59.408  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:05:59.408  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:05:59.409  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:05:59.409  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:05:59.464  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:05:59.464  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:05:59.465  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:05:59.465  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:06:16.610  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:06:16.610  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:06:16.611  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:06:16.611  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:06:16.670  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:06:16.671  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:06:16.672  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:06:16.673  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:06:48.233  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:06:48.234  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:06:48.234  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:06:48.236  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:06:48.286  INFO 26280 --- [http-nio-8099-exec-9] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:06:48.286  INFO 26280 --- [http-nio-8099-exec-9] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:06:48.286  INFO 26280 --- [http-nio-8099-exec-9] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:06:48.287  INFO 26280 --- [http-nio-8099-exec-9] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:07:05.479  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:07:05.479  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:07:05.480  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:07:05.480  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:07:05.495  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:07:05.495  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:07:05.496  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:07:05.497  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:07:54.268  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:07:54.269  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:07:54.270  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:07:54.270  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:07:54.335  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:07:54.336  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:07:54.336  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:07:54.337  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:08:05.419  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:08:05.420  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:08:05.420  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:08:05.421  INFO 26280 --- [http-nio-8099-exec-5] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:08:05.481  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:08:05.482  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:08:05.482  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:08:05.482  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:13:50.751  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:13:50.752  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:13:50.753  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:13:50.753  INFO 26280 --- [http-nio-8099-exec-8] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:13:50.816  INFO 26280 --- [http-nio-8099-exec-9] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:13:50.816  INFO 26280 --- [http-nio-8099-exec-9] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:13:50.816  INFO 26280 --- [http-nio-8099-exec-9] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:13:50.817  INFO 26280 --- [http-nio-8099-exec-9] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:14:11.796  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:14:11.796  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:14:11.797  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:14:11.797  INFO 26280 --- [http-nio-8099-exec-1] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:14:11.812  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:14:11.813  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:14:11.813  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:14:11.813  INFO 26280 --- [http-nio-8099-exec-2] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:14:31.527  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
-2020-10-29 15:14:31.528  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
-2020-10-29 15:14:31.529  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
-2020-10-29 15:14:31.529  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
-2020-10-29 15:14:31.529  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
-2020-10-29 15:14:31.531  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
-2020-10-29 15:14:31.532  INFO 26280 --- [http-nio-8099-exec-3] com.arc.cardemo.utils.LoggingHelper      : auth service:  adding token
-2020-10-29 15:14:31.590  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:14:31.591  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:14:31.591  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:14:31.591  INFO 26280 --- [http-nio-8099-exec-4] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:14:47.249  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:14:47.249  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:14:47.250  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:14:47.250  INFO 26280 --- [http-nio-8099-exec-6] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:14:47.259  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:14:47.260  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 15:14:47.260  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
-2020-10-29 15:14:47.260  INFO 26280 --- [http-nio-8099-exec-7] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
-2020-10-29 17:16:09.199  INFO 26280 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-29 17:16:09.205  INFO 26280 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-29 17:16:09.436  INFO 26280 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-10-29 17:16:09.449  INFO 26280 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-10-29 17:16:09.782  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Starting CardemoApplication on USARRRCOVERT5 with PID 26280 (C:\fx\initialzr\cardemo\cardemo\target\classes started by rcovert in C:\fx\initialzr\cardemo\cardemo)
-2020-10-29 17:16:09.783  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : No active profile set, falling back to default profiles: default
-2020-10-29 17:16:10.167  INFO 26280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-10-29 17:16:10.188  INFO 26280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 3 JPA repository interfaces.
-2020-10-29 17:16:10.431  INFO 26280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
-2020-10-29 17:16:10.431  INFO 26280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-29 17:16:10.431  INFO 26280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-29 17:16:10.499  INFO 26280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-10-29 17:16:10.499  INFO 26280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 711 ms
-2020-10-29 17:16:10.636  INFO 26280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2020-10-29 17:16:10.640  INFO 26280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2020-10-29 17:16:10.977  INFO 26280 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-29 17:16:10.995  INFO 26280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-10-29 17:16:10.996  INFO 26280 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.context.ApplicationContext com.arc.cardemo.CardemoApplication.context
-2020-10-29 17:16:11.103  WARN 26280 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-29 17:16:11.156  INFO 26280 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.arc.cardemo.utils.LoggingHelper com.arc.cardemo.service.UserDetailServiceImpl.logThis
-2020-10-29 17:16:11.170  INFO 26280 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.context.ApplicationContext com.arc.cardemo.domain.DbHelper.context
-2020-10-29 17:16:11.232  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : security config:  Inside of security config http
-2020-10-29 17:16:11.247  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : security config:  Inside of security config cors config
-2020-10-29 17:16:11.251  INFO 26280 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58493f7a, org.springframework.security.web.context.SecurityContextPersistenceFilter@8c31873, org.springframework.security.web.header.HeaderWriterFilter@3404dfd3, org.springframework.web.filter.CorsFilter@2fac1e76, org.springframework.security.web.authentication.logout.LogoutFilter@77714b22, com.arc.cardemo.LoginFilter@7dab2a7e, com.arc.cardemo.AuthenticationFilter@2a7a3819, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c9f9b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1221543b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b5960c3, org.springframework.security.web.session.SessionManagementFilter@41169476, org.springframework.security.web.access.ExceptionTranslationFilter@14538a2f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@311cd349]
-2020-10-29 17:16:11.297  INFO 26280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-29 17:16:11.459  INFO 26280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
-2020-10-29 17:16:11.463  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Started CardemoApplication in 1.75 seconds (JVM running for 97637.921)
-2020-10-29 17:16:11.518  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : Spring Boot example log record
-2020-10-29 17:16:11.519  INFO 26280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-10-29 17:18:10.303  INFO 26280 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-29 17:18:10.305  INFO 26280 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-29 17:18:10.418  INFO 26280 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2020-10-29 17:18:10.422  INFO 26280 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2020-10-29 17:18:10.563  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Starting CardemoApplication on USARRRCOVERT5 with PID 26280 (C:\fx\initialzr\cardemo\cardemo\target\classes started by rcovert in C:\fx\initialzr\cardemo\cardemo)
-2020-10-29 17:18:10.563  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : No active profile set, falling back to default profiles: default
-2020-10-29 17:18:10.951  INFO 26280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-10-29 17:18:10.975  INFO 26280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 3 JPA repository interfaces.
-2020-10-29 17:18:11.146  INFO 26280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
-2020-10-29 17:18:11.147  INFO 26280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-29 17:18:11.147  INFO 26280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-29 17:18:11.219  INFO 26280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-10-29 17:18:11.219  INFO 26280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 652 ms
-2020-10-29 17:18:11.334  INFO 26280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2020-10-29 17:18:11.338  INFO 26280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2020-10-29 17:18:11.638  INFO 26280 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-29 17:18:11.650  INFO 26280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-10-29 17:18:11.651  INFO 26280 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.context.ApplicationContext com.arc.cardemo.CardemoApplication.context
-2020-10-29 17:18:11.716  WARN 26280 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-29 17:18:11.748  INFO 26280 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.arc.cardemo.utils.LoggingHelper com.arc.cardemo.service.UserDetailServiceImpl.logThis
-2020-10-29 17:18:11.756  INFO 26280 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.context.ApplicationContext com.arc.cardemo.domain.DbHelper.context
-2020-10-29 17:18:11.802  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : security config:  Inside of security config http
-2020-10-29 17:18:11.810  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : security config:  Inside of security config cors config
-2020-10-29 17:18:11.811  INFO 26280 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b760ca3, org.springframework.security.web.context.SecurityContextPersistenceFilter@6060608f, org.springframework.security.web.header.HeaderWriterFilter@276c7dd7, org.springframework.web.filter.CorsFilter@4e8dc227, org.springframework.security.web.authentication.logout.LogoutFilter@6f5c01e, com.arc.cardemo.LoginFilter@4680b0f, com.arc.cardemo.AuthenticationFilter@4459b42f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@525bc6aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@161d9bf3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2fa1ab13, org.springframework.security.web.session.SessionManagementFilter@5a352522, org.springframework.security.web.access.ExceptionTranslationFilter@1915639a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52424673]
-2020-10-29 17:18:11.843  INFO 26280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-29 17:18:11.943  INFO 26280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
-2020-10-29 17:18:11.946  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Started CardemoApplication in 1.442 seconds (JVM running for 97758.405)
-2020-10-29 17:18:11.993  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : Spring Boot example log record
-2020-10-29 17:18:11.994  INFO 26280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-10-29 18:17:57.825  INFO 26280 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-29 18:17:57.827  INFO 26280 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-29 18:17:57.955  INFO 26280 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2020-10-29 18:17:57.959  INFO 26280 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2020-10-29 18:17:58.115  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Starting CardemoApplication on USARRRCOVERT5 with PID 26280 (C:\fx\initialzr\cardemo\cardemo\target\classes started by rcovert in C:\fx\initialzr\cardemo\cardemo)
-2020-10-29 18:17:58.115  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : No active profile set, falling back to default profiles: default
-2020-10-29 18:17:58.545  INFO 26280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-10-29 18:17:58.550  INFO 26280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 JPA repository interfaces.
-2020-10-29 18:17:58.662  INFO 26280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
-2020-10-29 18:17:58.662  INFO 26280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-29 18:17:58.662  INFO 26280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-29 18:17:58.730  INFO 26280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-10-29 18:17:58.730  INFO 26280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 610 ms
-2020-10-29 18:17:58.785  INFO 26280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-29 18:17:58.798  WARN 26280 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cardemoApplication': Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.arc.cardemo.CardemoApplication] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@2626b418]
-2020-10-29 18:17:58.799  INFO 26280 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-29 18:17:58.801  INFO 26280 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2020-10-29 18:17:58.806  INFO 26280 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2020-10-29 18:17:58.826  INFO 26280 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-29 18:17:58.827  INFO 26280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-29 18:17:58.828  INFO 26280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
-2020-10-29 18:17:58.829  INFO 26280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
-2020-10-29 18:17:58.830  INFO 26280 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-10-29 18:17:58.836  INFO 26280 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+2020-11-09 14:51:05.395  INFO 34236 --- [qtp562178416-32] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
+2020-11-09 14:51:05.483  INFO 34236 --- [qtp562178416-32] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
+2020-11-09 14:51:05.535  INFO 34236 --- [qtp562178416-32] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
+2020-11-09 14:51:05.536  INFO 34236 --- [qtp562178416-32] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
+2020-11-09 14:51:05.538  INFO 34236 --- [qtp562178416-32] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
+2020-11-09 14:51:05.540  INFO 34236 --- [qtp562178416-32] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
+2020-11-09 14:51:05.709  INFO 34236 --- [qtp562178416-32] com.arc.cardemo.utils.LoggingHelper      : token is null
+2020-11-09 14:51:05.710  INFO 34236 --- [qtp562178416-32] com.arc.cardemo.utils.LoggingHelper      : auth service sseUser is null
+2020-11-09 14:51:05.710  INFO 34236 --- [qtp562178416-32] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
+2020-11-09 14:51:05.711  INFO 34236 --- [qtp562178416-32] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
+2020-11-09 14:51:51.875  INFO 34236 --- [qtp562178416-1113] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
+2020-11-09 14:51:51.876  INFO 34236 --- [qtp562178416-1113] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
+2020-11-09 14:51:51.878  INFO 34236 --- [qtp562178416-1113] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
+2020-11-09 14:51:51.878  INFO 34236 --- [qtp562178416-1113] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
+2020-11-09 14:51:51.878  INFO 34236 --- [qtp562178416-1113] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
+2020-11-09 14:51:51.880  INFO 34236 --- [qtp562178416-1113] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
+2020-11-09 14:51:51.884  INFO 34236 --- [qtp562178416-1113] com.arc.cardemo.utils.LoggingHelper      : token is null
+2020-11-09 14:51:51.884  INFO 34236 --- [qtp562178416-1113] com.arc.cardemo.utils.LoggingHelper      : auth service sseUser is null
+2020-11-09 14:51:51.884  INFO 34236 --- [qtp562178416-1113] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
+2020-11-09 14:51:51.885  INFO 34236 --- [qtp562178416-1113] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
+2020-11-09 14:53:26.384  INFO 34236 --- [Thread-1] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@40dacf3e{HTTP/1.1, (http/1.1)}{127.0.0.1:9001}
+2020-11-09 14:53:26.387  INFO 34236 --- [Thread-1] org.eclipse.jetty.server.session         : node0 Stopped scavenging
+2020-11-09 14:53:26.444  INFO 34236 --- [Thread-1] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-11-09 14:53:26.456  INFO 34236 --- [Thread-1] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@22172815{application,/,[file:///C:/Users/rcovert/AppData/Local/Temp/jetty-docbase.4520361478568666822.9001/],UNAVAILABLE}
+2020-11-09 14:53:26.620  INFO 34236 --- [Thread-1] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@2ad8189c{HTTP/1.1, (http/1.1)}{0.0.0.0:8099}
+2020-11-09 14:53:26.620  INFO 34236 --- [Thread-1] org.eclipse.jetty.server.session         : node0 Stopped scavenging
+2020-11-09 14:53:26.633  INFO 34236 --- [Thread-1] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-11-09 14:53:26.634  INFO 34236 --- [Thread-1] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@63fd3f8d{application,/,[file:///C:/Users/rcovert/AppData/Local/Temp/jetty-docbase.8636672743746609254.8099/],UNAVAILABLE}
+2020-11-09 14:53:26.990  INFO 34236 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 14:53:27.496  INFO 34236 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 14:53:27.516  INFO 34236 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 14:53:28.340  INFO 34236 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Starting CardemoApplication on USARRRCOVERT5 with PID 34236 (C:\fx\initialzr\cardemo\cardemo\target\classes started by rcovert in C:\fx\initialzr\cardemo\cardemo)
+2020-11-09 14:53:28.340  INFO 34236 --- [restartedMain] com.arc.cardemo.CardemoApplication       : No active profile set, falling back to default profiles: default
+2020-11-09 14:53:28.975  INFO 34236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-11-09 14:53:29.017  INFO 34236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 3 JPA repository interfaces.
+2020-11-09 14:53:29.413  INFO 34236 --- [restartedMain] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 8099
+2020-11-09 14:53:29.414  INFO 34236 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 15.0.1+9-18
+2020-11-09 14:53:29.415  INFO 34236 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2020-11-09 14:53:29.415  INFO 34236 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1070 ms
+2020-11-09 14:53:29.502  INFO 34236 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2020-11-09 14:53:29.502  INFO 34236 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2020-11-09 14:53:29.502  INFO 34236 --- [restartedMain] org.eclipse.jetty.server.session         : node0 Scavenging every 660000ms
+2020-11-09 14:53:29.505  INFO 34236 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@652ada6{application,/,[file:///C:/Users/rcovert/AppData/Local/Temp/jetty-docbase.13068676470353261739.8099/],AVAILABLE}
+2020-11-09 14:53:29.505  INFO 34236 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @325781493ms
+2020-11-09 14:53:29.575  INFO 34236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-11-09 14:53:29.581  INFO 34236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-11-09 14:53:29.956  INFO 34236 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 14:53:29.979  WARN 34236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-09 14:53:29.980  INFO 34236 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.context.ApplicationContext com.arc.cardemo.CardemoApplication.context
+2020-11-09 14:53:30.100  WARN 34236 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 14:53:30.147  INFO 34236 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.arc.cardemo.utils.LoggingHelper com.arc.cardemo.service.UserDetailServiceImpl.logThis
+2020-11-09 14:53:30.156  INFO 34236 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.context.ApplicationContext com.arc.cardemo.domain.DbHelper.context
+2020-11-09 14:53:30.216  INFO 34236 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : security config:  Inside of security config http
+2020-11-09 14:53:30.232  INFO 34236 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : security config:  Inside of security config cors config
+2020-11-09 14:53:30.235  INFO 34236 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7709bd39, org.springframework.security.web.context.SecurityContextPersistenceFilter@53022374, org.springframework.security.web.header.HeaderWriterFilter@7e4372f5, org.springframework.web.filter.CorsFilter@832e060, org.springframework.security.web.authentication.logout.LogoutFilter@1c60cb5e, com.arc.cardemo.LoginFilter@5a12e501, com.arc.cardemo.AuthenticationFilter@15b73475, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a633d15, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f522476, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f6db38f, org.springframework.security.web.session.SessionManagementFilter@3a4765ef, org.springframework.security.web.access.ExceptionTranslationFilter@a2c749d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b6e8086]
+2020-11-09 14:53:30.301  INFO 34236 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 14:53:30.545  INFO 34236 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 14:53:30.545  INFO 34236 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 14:53:30.547  INFO 34236 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-11-09 14:53:30.552  INFO 34236 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@37f83f1c{HTTP/1.1, (http/1.1)}{0.0.0.0:8099}
+2020-11-09 14:53:30.552  INFO 34236 --- [restartedMain] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 8099 (http/1.1) with context path '/'
+2020-11-09 14:53:30.714  INFO 34236 --- [restartedMain] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 9001
+2020-11-09 14:53:30.715  INFO 34236 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 15.0.1+9-18
+2020-11-09 14:53:30.717  INFO 34236 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2020-11-09 14:53:30.717  INFO 34236 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 163 ms
+2020-11-09 14:53:30.720  INFO 34236 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2020-11-09 14:53:30.721  INFO 34236 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2020-11-09 14:53:30.721  INFO 34236 --- [restartedMain] org.eclipse.jetty.server.session         : node0 Scavenging every 600000ms
+2020-11-09 14:53:30.723  INFO 34236 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@5bf2824e{application,/,[file:///C:/Users/rcovert/AppData/Local/Temp/jetty-docbase.8534486415352663245.9001/],AVAILABLE}
+2020-11-09 14:53:30.723  INFO 34236 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @325782711ms
+2020-11-09 14:53:30.728  INFO 34236 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-11-09 14:53:30.764  INFO 34236 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 14:53:30.764  INFO 34236 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 14:53:30.765  INFO 34236 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-11-09 14:53:30.772  INFO 34236 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@61ae1c0c{HTTP/1.1, (http/1.1)}{127.0.0.1:9001}
+2020-11-09 14:53:30.772  INFO 34236 --- [restartedMain] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 9001 (http/1.1) with context path '/'
+2020-11-09 14:53:30.781  INFO 34236 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Started CardemoApplication in 2.536 seconds (JVM running for 325782.768)
+2020-11-09 14:53:30.826  INFO 34236 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : Spring Boot example log record
+2020-11-09 14:53:30.830  INFO 34236 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-10-29 18:17:58.846 ERROR 26280 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cardemoApplication': Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.arc.cardemo.CardemoApplication] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@2626b418]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at com.arc.cardemo.CardemoApplication.main(CardemoApplication.java:34) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.arc.cardemo.CardemoApplication] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@2626b418]
-	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734) ~[spring-core-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:427) ~[spring-orm-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:408) ~[spring-orm-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:335) ~[spring-orm-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	... 21 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: Lcom/arc/cardemo/domain/CarRepository;
-	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
-	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3067) ~[na:na]
-	at java.base/java.lang.Class.getDeclaredFields(Class.java:2254) ~[na:na]
-	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.arc.cardemo.domain.CarRepository
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583) ~[na:na]
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
-	... 31 common frames omitted
+==========================
+CONDITION EVALUATION DELTA
+==========================
 
-2020-10-29 18:18:02.419  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Starting CardemoApplication on USARRRCOVERT5 with PID 26280 (C:\fx\initialzr\cardemo\cardemo\target\classes started by rcovert in C:\fx\initialzr\cardemo\cardemo)
-2020-10-29 18:18:02.419  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : No active profile set, falling back to default profiles: default
-2020-10-29 18:18:02.857  INFO 26280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-10-29 18:18:02.883  INFO 26280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 3 JPA repository interfaces.
-2020-10-29 18:18:03.030  INFO 26280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
-2020-10-29 18:18:03.031  INFO 26280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-29 18:18:03.031  INFO 26280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-29 18:18:03.106  INFO 26280 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2020-10-29 18:18:03.106  INFO 26280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 682 ms
-2020-10-29 18:18:03.234  INFO 26280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
-2020-10-29 18:18:03.239  INFO 26280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
-2020-10-29 18:18:03.538  INFO 26280 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-29 18:18:03.551  INFO 26280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-10-29 18:18:03.552  INFO 26280 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.context.ApplicationContext com.arc.cardemo.CardemoApplication.context
-2020-10-29 18:18:03.632  WARN 26280 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-29 18:18:03.669  INFO 26280 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.arc.cardemo.utils.LoggingHelper com.arc.cardemo.service.UserDetailServiceImpl.logThis
-2020-10-29 18:18:03.680  INFO 26280 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.context.ApplicationContext com.arc.cardemo.domain.DbHelper.context
-2020-10-29 18:18:03.719  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : security config:  Inside of security config http
-2020-10-29 18:18:03.727  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : security config:  Inside of security config cors config
-2020-10-29 18:18:03.728  INFO 26280 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68fdf894, org.springframework.security.web.context.SecurityContextPersistenceFilter@75d8f646, org.springframework.security.web.header.HeaderWriterFilter@5027a76e, org.springframework.web.filter.CorsFilter@6527b49d, org.springframework.security.web.authentication.logout.LogoutFilter@2d074852, com.arc.cardemo.LoginFilter@7ff5dd50, com.arc.cardemo.AuthenticationFilter@6e5a75e9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ce8c1a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1990781, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@696419ee, org.springframework.security.web.session.SessionManagementFilter@53d9b023, org.springframework.security.web.access.ExceptionTranslationFilter@63af40d8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16f0f9ce]
-2020-10-29 18:18:03.760  INFO 26280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-29 18:18:03.908  INFO 26280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
-2020-10-29 18:18:03.913  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Started CardemoApplication in 1.592 seconds (JVM running for 101350.371)
-2020-10-29 18:18:03.978  INFO 26280 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : Spring Boot example log record
-2020-10-29 18:18:03.979  INFO 26280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-10-29 18:23:57.783  INFO 26280 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-29 18:23:57.785  INFO 26280 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-29 18:23:57.877  INFO 26280 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
-2020-10-29 18:23:57.882  INFO 26280 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
-2020-10-29 18:23:58.020  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Starting CardemoApplication on USARRRCOVERT5 with PID 26280 (C:\fx\initialzr\cardemo\cardemo\target\classes started by rcovert in C:\fx\initialzr\cardemo\cardemo)
-2020-10-29 18:23:58.020  INFO 26280 --- [restartedMain] com.arc.cardemo.CardemoApplication       : No active profile set, falling back to default profiles: default
-2020-10-29 18:23:58.334  INFO 26280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-10-29 18:23:58.356  INFO 26280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 3 JPA repository interfaces.
-2020-10-29 18:23:58.487  INFO 26280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
-2020-10-29 18:23:58.488  INFO 26280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-29 18:23:58.488  INFO 26280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-29 18:23:58.553  INFO 26280 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2020-10-29 18:23:58.553  INFO 26280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 530 ms
-2020-10-29 18:23:58.664  INFO 26280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
-2020-10-29 18:23:58.664  WARN 26280 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-2020-10-29 18:23:58.665  INFO 26280 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-10-29 18:23:58.669  INFO 26280 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-10-29 18:23:58.671 ERROR 26280 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+Positive matches:
+-----------------
 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at com.arc.cardemo.CardemoApplication.main(CardemoApplication.java:34) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	... 22 common frames omitted
-Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
-	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.4.21.Final.jar:5.4.21.Final]
-	... 39 common frames omitted
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnProperty (spring.mvc.formcontent.filter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.hiddenmethod.filter.enabled) did not find property 'enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#localeResolver:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.locale) did not find property 'locale' (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-11-09 14:55:22.608  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-11-09 14:55:22.614  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@61ae1c0c{HTTP/1.1, (http/1.1)}{127.0.0.1:9001}
+2020-11-09 14:55:22.614  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] org.eclipse.jetty.server.session         : node0 Stopped scavenging
+2020-11-09 14:55:22.615  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-11-09 14:55:22.615  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@5bf2824e{application,/,[file:///C:/Users/rcovert/AppData/Local/Temp/jetty-docbase.8534486415352663245.9001/],UNAVAILABLE}
+2020-11-09 14:55:22.620  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@37f83f1c{HTTP/1.1, (http/1.1)}{0.0.0.0:8099}
+2020-11-09 14:55:22.620  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] org.eclipse.jetty.server.session         : node0 Stopped scavenging
+2020-11-09 14:55:22.620  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-11-09 14:55:22.621  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@652ada6{application,/,[file:///C:/Users/rcovert/AppData/Local/Temp/jetty-docbase.13068676470353261739.8099/],UNAVAILABLE}
+2020-11-09 14:55:22.623  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 14:55:22.625  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 14:55:22.745  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-11-09 14:55:22.748  INFO 34236 --- [RMI TCP Connection(5028)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-11-09 14:55:52.297  INFO 38564 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Starting CardemoApplication on USARRRCOVERT5 with PID 38564 (C:\fx\initialzr\cardemo\cardemo\target\classes started by rcovert in C:\fx\initialzr\cardemo\cardemo)
+2020-11-09 14:55:52.300  INFO 38564 --- [restartedMain] com.arc.cardemo.CardemoApplication       : No active profile set, falling back to default profiles: default
+2020-11-09 14:55:52.374  INFO 38564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-09 14:55:52.374  INFO 38564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-09 14:55:53.694  INFO 38564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-11-09 14:55:53.960  INFO 38564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 251ms. Found 3 JPA repository interfaces.
+2020-11-09 14:55:54.984  INFO 38564 --- [restartedMain] org.eclipse.jetty.util.log               : Logging initialized @5330ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-11-09 14:55:55.436  INFO 38564 --- [restartedMain] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 8099
+2020-11-09 14:55:55.441  INFO 38564 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 15.0.1+9-18
+2020-11-09 14:55:55.474  INFO 38564 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2020-11-09 14:55:55.475  INFO 38564 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3100 ms
+2020-11-09 14:55:55.851  INFO 38564 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2020-11-09 14:55:55.852  INFO 38564 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2020-11-09 14:55:55.853  INFO 38564 --- [restartedMain] org.eclipse.jetty.server.session         : node0 Scavenging every 600000ms
+2020-11-09 14:55:55.869  INFO 38564 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@4ecbab06{application,/,[file:///C:/Users/rcovert/AppData/Local/Temp/jetty-docbase.8472687478802123035.8099/],AVAILABLE}
+2020-11-09 14:55:55.870  INFO 38564 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @6215ms
+2020-11-09 14:55:56.718  INFO 38564 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 14:55:56.791  INFO 38564 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 14:55:58.210  INFO 38564 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 14:55:58.281  WARN 38564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-09 14:55:58.287  INFO 38564 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.context.ApplicationContext com.arc.cardemo.CardemoApplication.context
+2020-11-09 14:55:58.803  WARN 38564 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 14:55:59.001  INFO 38564 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.arc.cardemo.utils.LoggingHelper com.arc.cardemo.service.UserDetailServiceImpl.logThis
+2020-11-09 14:55:59.053  INFO 38564 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.context.ApplicationContext com.arc.cardemo.domain.DbHelper.context
+2020-11-09 14:55:59.510  INFO 38564 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : security config:  Inside of security config http
+2020-11-09 14:55:59.609  INFO 38564 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : security config:  Inside of security config cors config
+2020-11-09 14:55:59.648  INFO 38564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e74b5ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@4609c6f5, org.springframework.security.web.header.HeaderWriterFilter@36dd8a7d, org.springframework.web.filter.CorsFilter@159e1636, org.springframework.security.web.authentication.logout.LogoutFilter@49e1cac3, com.arc.cardemo.LoginFilter@b1ea127, com.arc.cardemo.AuthenticationFilter@64ab7118, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42b1b782, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3868e9d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7feb7baf, org.springframework.security.web.session.SessionManagementFilter@54a8fc33, org.springframework.security.web.access.ExceptionTranslationFilter@5c066755, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44eeab79]
+2020-11-09 14:55:59.950  INFO 38564 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 14:56:01.043  INFO 38564 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 14:56:01.043  INFO 38564 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 14:56:01.059  INFO 38564 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-11-09 14:56:01.105  INFO 38564 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@1502a73a{HTTP/1.1, (http/1.1)}{0.0.0.0:8099}
+2020-11-09 14:56:01.106  INFO 38564 --- [restartedMain] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 8099 (http/1.1) with context path '/'
+2020-11-09 14:56:01.343  INFO 38564 --- [restartedMain] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 9001
+2020-11-09 14:56:01.343  INFO 38564 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 15.0.1+9-18
+2020-11-09 14:56:01.345  INFO 38564 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2020-11-09 14:56:01.346  INFO 38564 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 235 ms
+2020-11-09 14:56:01.351  INFO 38564 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2020-11-09 14:56:01.352  INFO 38564 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2020-11-09 14:56:01.352  INFO 38564 --- [restartedMain] org.eclipse.jetty.server.session         : node0 Scavenging every 660000ms
+2020-11-09 14:56:01.354  INFO 38564 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@2531f6ee{application,/,[file:///C:/Users/rcovert/AppData/Local/Temp/jetty-docbase.17678082596187695246.9001/],AVAILABLE}
+2020-11-09 14:56:01.355  INFO 38564 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @11700ms
+2020-11-09 14:56:01.362  INFO 38564 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-11-09 14:56:01.405  INFO 38564 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 14:56:01.406  INFO 38564 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 14:56:01.406  INFO 38564 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2020-11-09 14:56:01.414  INFO 38564 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@ce8bc76{HTTP/1.1, (http/1.1)}{127.0.0.1:9001}
+2020-11-09 14:56:01.414  INFO 38564 --- [restartedMain] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 9001 (http/1.1) with context path '/'
+2020-11-09 14:56:01.441  INFO 38564 --- [restartedMain] com.arc.cardemo.CardemoApplication       : Started CardemoApplication in 9.658 seconds (JVM running for 11.787)
+2020-11-09 14:56:01.577  INFO 38564 --- [restartedMain] com.arc.cardemo.utils.LoggingHelper      : Spring Boot example log record
+2020-11-09 14:57:19.407  INFO 38564 --- [qtp1938428387-35] com.arc.cardemo.utils.LoggingHelper      : from login filter:  login filter:  attempt
+2020-11-09 14:57:19.408  INFO 38564 --- [qtp1938428387-35] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find login filter user
+2020-11-09 14:57:19.562  INFO 38564 --- [qtp1938428387-35] com.arc.cardemo.utils.LoggingHelper      : dbhelper:  name from dbLook --> user
+2020-11-09 14:57:19.563  INFO 38564 --- [qtp1938428387-35] com.arc.cardemo.utils.LoggingHelper      : from login filter:  user find: user
+2020-11-09 14:57:19.646  INFO 38564 --- [qtp1938428387-35] com.arc.cardemo.utils.LoggingHelper      : made it to loadUserByUsername
+2020-11-09 14:57:19.650  INFO 38564 --- [qtp1938428387-35] com.arc.cardemo.utils.LoggingHelper      : user details:  load user by name finish
+2020-11-09 14:57:19.653  INFO 38564 --- [qtp1938428387-35] com.arc.cardemo.utils.LoggingHelper      : auth service:  adding token
+2020-11-09 14:57:19.867  INFO 38564 --- [qtp1938428387-36] com.arc.cardemo.utils.LoggingHelper      : token is Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA1MDM4MjM5fQ.QWnFHrXjRje5pQjlAMliIxn1okroifEybVXVFb72pcWsakz6WVuXImtey3PvV5DOY7JXwtSPvEIgP27jxJhuTg
+2020-11-09 14:57:19.867  INFO 38564 --- [qtp1938428387-36] com.arc.cardemo.utils.LoggingHelper      : auth service sseUser is null
+2020-11-09 14:57:19.867  INFO 38564 --- [qtp1938428387-36] com.arc.cardemo.utils.LoggingHelper      : auth service:  getting authentication from service
+2020-11-09 14:57:19.880  INFO 38564 --- [qtp1938428387-36] com.arc.cardemo.utils.LoggingHelper      : auth service user is: user
+2020-11-09 14:57:19.880  INFO 38564 --- [qtp1938428387-36] com.arc.cardemo.utils.LoggingHelper      : auth filter:  inside of authentication filter
+2020-11-09 14:57:19.898  INFO 38564 --- [qtp1938428387-36] com.arc.cardemo.utils.LoggingHelper      : token is Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA1MDM4MjM5fQ.QWnFHrXjRje5pQjlAMliIxn1okroifEybVXVFb72pcWsakz6WVuXImtey3PvV5DOY7JXwtSPvEIgP27jxJhuTg
