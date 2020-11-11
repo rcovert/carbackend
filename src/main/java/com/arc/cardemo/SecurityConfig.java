@@ -48,7 +48,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				// Filter for other requests to check JWT in header
 				.addFilterBefore(new AuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
 		
-		logThis.logData("security config:  Inside of security config http");
+		//logThis.logData("security config:  Inside of security config http");
 
 	}
 
@@ -64,7 +64,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		config.applyPermitDefaultValues();
 
 		source.registerCorsConfiguration("/**", config);
-		logThis.logData("security config:  Inside of security config cors config");
+		//logThis.logData("security config:  Inside of security config cors config");
 		return source;
 	}
 }

@@ -20,7 +20,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		logThis.logData("made it to loadUserByUsername");
+		//logThis.logData("made it to loadUserByUsername");
 		// logThis.logData("user details:  load user by name start");
 		User currentUser = repository.findByUsername(username);
 		if (currentUser == null) {
@@ -29,7 +29,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
 		UserDetails user = new org.springframework.security.core
 				.userdetails.User(username, currentUser.getPassword(),
 				true, true, true, true, AuthorityUtils.createAuthorityList(currentUser.getRole()));
-		logThis.logData("user details:  load user by name finish");
+		//logThis.logData("user details:  load user by name finish");
 		return user;
 	}
 
