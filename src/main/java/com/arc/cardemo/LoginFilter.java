@@ -54,15 +54,15 @@ public class LoginFilter extends AbstractAuthenticationProcessingFilter  {
 	public Authentication attemptAuthentication(HttpServletRequest req, HttpServletResponse res)
 			throws AuthenticationException, IOException, ServletException {
 		AccountCredentials creds = new ObjectMapper().readValue(req.getInputStream(), AccountCredentials.class);
-		logThis("login filter:  attempt");
-		logThis("user find login filter " + creds.getUsername());
+		//logThis("login filter:  attempt");
+		//logThis("user find login filter " + creds.getUsername());
 		User user = dbLookUp.doLookup(creds.getUsername());
 		if (user == null) {
 			logThis("no user found returning null");
 			return null;
 		}
 
-		logThis("user find: " + user.getUsername());
+		//logThis("user find: " + user.getUsername());
 		//need to test if user exists -- else we throw ugly exception
 
 		Authentication authentication;
@@ -70,8 +70,6 @@ public class LoginFilter extends AbstractAuthenticationProcessingFilter  {
 				creds.getUsername(), creds.getPassword(), Collections.emptyList()));
 		return authentication;
 
-//		return getAuthenticationManager().authenticate(new UsernamePasswordAuthenticationToken(creds.getUsername(),
-//				creds.getPassword(), Collections.emptyList()));
 	}
 
 	private void logThis(String string) {

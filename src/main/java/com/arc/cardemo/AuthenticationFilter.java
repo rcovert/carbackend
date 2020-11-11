@@ -26,7 +26,7 @@ public class AuthenticationFilter extends GenericFilterBean {
 			throws IOException, ServletException {
 		
 		Authentication authentication = AuthenticationService.getAuthentication((HttpServletRequest) request);
-		logThis.logData("auth filter:  inside of authentication filter");
+		//logThis.logData("auth filter:  inside of authentication filter");
 		SecurityContextHolder.getContext().setAuthentication(authentication);
 
 		filterChain.doFilter(request, response);
