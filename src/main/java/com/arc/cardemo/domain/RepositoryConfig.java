@@ -6,6 +6,8 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapt
 
 @Configuration
 public class RepositoryConfig extends RepositoryRestConfigurerAdapter {
+	// we need this class to make sure we 
+	// get the id col from the database
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
         config.exposeIdsFor(Car.class);

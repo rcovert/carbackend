@@ -8,6 +8,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.event.EventListener;
 import org.springframework.http.MediaType;
 import org.springframework.http.codec.ServerSentEvent;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.arc.cardemo.domain.Car;
 import com.arc.cardemo.domain.CarRepository;
+import com.arc.cardemo.messaging.MyEvent;
 
 import lombok.extern.log4j.Log4j2;
 import reactor.core.publisher.Flux;
@@ -24,46 +26,96 @@ import reactor.core.publisher.Flux;
 @RestController
 public class CarController {
 
+	private String EventData;
+	private Boolean isEvent = false;
+
+	public Boolean getIsEvent() {
+		return isEvent;
+	}
+
+	public void setIsEvent(Boolean isEvent) {
+		this.isEvent = isEvent;
+	}
+
+	public String getEventData() {
+		return EventData;
+	}
+
+	public void setEventData(String eventData) {
+		EventData = eventData;
+	}
+
 	@Autowired
 	private CarRepository repository;
-	
+
+	// this will register the bean as a listener
+	@EventListener
+	public void onMyEvent(MyEvent event) {
+		log.info("Event received: " + event.getMsg());
+		setEventData("Event received: " + event.getMsg());
+		this.setIsEvent(true);
+	}
 
 	@RequestMapping("/cars")
 	public Iterable<Car> getCars() {
 		return repository.findAll();
 	}
-	
+
 	@GetMapping("/stream-sse")
 	public Flux<ServerSentEvent<String>> streamEvents() {
 		return Flux.interval(Duration.ofSeconds(4))
 				.map(sequence -> ServerSentEvent.<String>builder().id(String.valueOf(sequence)).event("periodic-event")
 						.data("SSE - " + LocalTime.now().toString()).build());
 	}
-	
+
 	private String getTheData() throws ParseException {
+		// car controller is the observer
+		// examplefilter is the observable
 		JSONParser parser = new JSONParser();
 		JSONObject jsonObject = new JSONObject();
 		String timeNow = Instant.now().toString();
-		String toParse = "{\"message\":\"flux server event with server sent event ... @ " + timeNow + "\"}";
+		String evtData = getEventData();
+		String toParse = "{\"message\":\"" + evtData + "\"}";
+		log.info(toParse);
+		JSONObject json = (JSONObject) parser.parse(toParse);
+		String theData = json.toJSONString();
+		this.setIsEvent(false);
+		return theData;
+	}
+	
+	private String getNullData() throws ParseException {
+		// car controller is the observer
+		// examplefilter is the observable
+		this.setIsEvent(false);
+		JSONParser parser = new JSONParser();
+		JSONObject jsonObject = new JSONObject();
+		String timeNow = Instant.now().toString();
+		String evtData = "no rest api calls";
+		String toParse = "{\"message\":\"" + evtData + "\"}";
+		//log.info(toParse);
 		JSONObject json = (JSONObject) parser.parse(toParse);
 		String theData = json.toJSONString();
 		return theData;
 	}
-	
+
 	@GetMapping("/stream-sse2")
 	public Flux<ServerSentEvent<String>> streamEvents2() {
-		return Flux.interval(Duration.ofMillis(500))
-				.map(sequence -> {
-					try {
-						return ServerSentEvent.<String>builder().id(String.valueOf(sequence)).event("message")
-								.data(getTheData())
-								.build();
-					} catch (ParseException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-					return null;
-				});
+		
+		if (this.isEvent) {
+			return Flux.interval(Duration.ofMillis(500)).map(sequence -> {
+				try {
+					this.setIsEvent(false);
+					return ServerSentEvent.<String>builder().id(String.valueOf(sequence)).event("message")
+							.data(getTheData()).build();
+				} catch (ParseException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				return null;
+			});
+		} else { 
+			return Flux.never();
+		}
 	}
 
 	@GetMapping("/mono-sse")
@@ -73,11 +125,10 @@ public class CarController {
 		String timeNow = Instant.now().toString();
 		String toParse = "{\"message\":\"mono server event with server sent event ... @ " + timeNow + "\"}";
 		JSONObject json = (JSONObject) parser.parse(toParse);
-		//log.info(json.toJSONString());
+		// log.info(json.toJSONString());
 
 		return Flux.interval(Duration.ofMillis(100))
-				.just(ServerSentEvent.<String>builder().event("message")
-				.data(json.toJSONString()).id("11").build());
+				.just(ServerSentEvent.<String>builder().event("message").data(json.toJSONString()).id("11").build());
 	}
 
 	@GetMapping(path = "/stream-flux", produces = MediaType.TEXT_EVENT_STREAM_VALUE)

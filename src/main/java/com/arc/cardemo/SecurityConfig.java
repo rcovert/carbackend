@@ -18,7 +18,7 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import com.arc.cardemo.service.UserDetailServiceImpl;
-import com.arc.cardemo.utils.LoggingHelper;
+
 
 @Configuration
 @EnableWebSecurity
@@ -30,9 +30,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
 		auth.userDetailsService(userDetailsService).passwordEncoder(new BCryptPasswordEncoder());
 	}
-
-	@Autowired
-	private LoggingHelper logThis;
 
 	// SecurityConfig.java
 	@Override
@@ -49,7 +46,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.addFilterBefore(new AuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
 		
 		//logThis.logData("security config:  Inside of security config http");
-
 	}
 
 	// SecurityConfig.java

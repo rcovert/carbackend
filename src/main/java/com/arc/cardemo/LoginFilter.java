@@ -1,7 +1,6 @@
 package com.arc.cardemo;
 
 import java.io.IOException;
-
 import java.util.Collections;
 
 import javax.servlet.FilterChain;
@@ -9,39 +8,25 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import org.springframework.web.server.ServerWebExchange;
-import org.springframework.web.server.WebFilter;
-import org.springframework.web.server.WebFilterChain;
-import org.springframework.security.core.userdetails.UserDetails;
 
 import com.arc.cardemo.domain.AccountCredentials;
 import com.arc.cardemo.domain.DbHelper;
-import com.arc.cardemo.service.AuthenticationService;
 import com.arc.cardemo.domain.User;
-import com.arc.cardemo.utils.LoggingHelper;
+import com.arc.cardemo.service.AuthenticationService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import reactor.core.publisher.Mono;
+import lombok.extern.log4j.Log4j2;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
-import org.springframework.web.server.ServerWebExchange;
-import org.springframework.web.server.WebFilter;
-import org.springframework.web.server.WebFilterChain;
-import reactor.core.publisher.Mono;
-
+@Log4j2
 public class LoginFilter extends AbstractAuthenticationProcessingFilter  {
 
-	// @Autowired
-	private LoggingHelper logThis = new LoggingHelper();
+	
 	// @Autowired
 	private DbHelper dbLookUp = new DbHelper();
 
@@ -58,7 +43,7 @@ public class LoginFilter extends AbstractAuthenticationProcessingFilter  {
 		//logThis("user find login filter " + creds.getUsername());
 		User user = dbLookUp.doLookup(creds.getUsername());
 		if (user == null) {
-			logThis("no user found returning null");
+			log.info("no user found returning null");
 			return null;
 		}
 
@@ -70,11 +55,6 @@ public class LoginFilter extends AbstractAuthenticationProcessingFilter  {
 				creds.getUsername(), creds.getPassword(), Collections.emptyList()));
 		return authentication;
 
-	}
-
-	private void logThis(String string) {
-		// TODO Auto-generated method stub
-		logThis.logData("from login filter:  " + string);
 	}
 
 	@Override

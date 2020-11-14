@@ -7,22 +7,19 @@ import java.util.Date;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 
-import com.arc.cardemo.utils.LoggingHelper;
-
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import lombok.extern.log4j.Log4j2;
 
+@Log4j2
 public class AuthenticationService {
 	static final long EXPIRATIONTIME = 864_000_00; // 1 day in milliseconds
 	static final String SIGNINGKEY = "SecretKey";
 	static final String PREFIX = "Bearer";
 	//
-	// @Autowired
-	static private LoggingHelper logThis = new LoggingHelper();
 
 	// Add token to Authorization header
 	static public void addToken(HttpServletResponse res, String username) {

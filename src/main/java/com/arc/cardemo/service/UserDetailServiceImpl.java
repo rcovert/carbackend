@@ -9,14 +9,14 @@ import org.springframework.stereotype.Service;
 
 import com.arc.cardemo.domain.User;
 import com.arc.cardemo.domain.UserRepository;
-import com.arc.cardemo.utils.LoggingHelper;
 
+import lombok.extern.log4j.Log4j2;
+
+@Log4j2
 @Service
 public class UserDetailServiceImpl implements UserDetailsService {
 	@Autowired
 	private UserRepository repository;
-	@Autowired
-	private static LoggingHelper logThis = new LoggingHelper();
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -24,7 +24,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
 		// logThis.logData("user details:  load user by name start");
 		User currentUser = repository.findByUsername(username);
 		if (currentUser == null) {
-			logThis.logData("user details:  user not found error");
+			log.info("User details:  user not found error.");
 		}
 		UserDetails user = new org.springframework.security.core
 				.userdetails.User(username, currentUser.getPassword(),

@@ -14,13 +14,10 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.GenericFilterBean;
 
 import com.arc.cardemo.service.AuthenticationService;
-import com.arc.cardemo.utils.LoggingHelper;
 
 @Configuration
 public class AuthenticationFilter extends GenericFilterBean {
 	
-	//@Autowired
-	private LoggingHelper logThis = new LoggingHelper();
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain)
 			throws IOException, ServletException {
