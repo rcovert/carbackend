@@ -16,8 +16,10 @@ import com.arc.cardemo.domain.Owner;
 import com.arc.cardemo.domain.OwnerRepository;
 import com.arc.cardemo.domain.User;
 import com.arc.cardemo.domain.UserRepository;
-import com.arc.cardemo.utils.LoggingHelper;
 
+import lombok.extern.log4j.Log4j2;
+
+@Log4j2
 @SpringBootApplication
 public class CardemoApplication extends SpringBootServletInitializer {
 
@@ -27,8 +29,7 @@ public class CardemoApplication extends SpringBootServletInitializer {
 	private OwnerRepository orepository;
 	@Autowired
 	private UserRepository urepository;
-	// @Autowired
-	private static LoggingHelper logThis = new LoggingHelper();
+	
 	@Autowired
 	private static ApplicationContext context;
 
@@ -69,7 +70,7 @@ public class CardemoApplication extends SpringBootServletInitializer {
 			urepository
 					.save(new User("admin", "$2a$04$KNLUwOWHVQZVpXyMBNc7JOzbLiBjb9Tk9bP7KNcPI12ICuvzXQQKG", "ADMIN"));
 
-			logThis.logData("Spring Boot example log record");
+			log.info("Spring Boot example log record");
 		};
 	}
 

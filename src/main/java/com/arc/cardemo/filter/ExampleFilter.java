@@ -10,14 +10,20 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.arc.cardemo.messaging.MyEventPublisherBean;
+
+import lombok.extern.log4j.Log4j2;
+
+@Log4j2
 @Component
 public class ExampleFilter implements Filter {
-	private static final Logger logger = LoggerFactory.getLogger(ExampleFilter.class);
-
+	
+	@Autowired
+	MyEventPublisherBean myEventPublisherBean;
+	
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
 	}
@@ -25,8 +31,9 @@ public class ExampleFilter implements Filter {
 	@Override
 	public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
 			throws IOException, ServletException {
-		//logger.info("filter: " + ((HttpServletRequest) servletRequest).getMethod());
-		String methodString = ((HttpServletRequest) servletRequest).getMethod();
+		log.info("from filter: " + ((HttpServletRequest) servletRequest).getMethod());
+		String data = ((HttpServletRequest) servletRequest).getMethod();
+		myEventPublisherBean.sendMsg("To Listener:  Method received: " + data);
 
 		filterChain.doFilter(servletRequest, servletResponse);
 	}
