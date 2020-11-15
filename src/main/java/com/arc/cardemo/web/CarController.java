@@ -75,7 +75,7 @@ public class CarController {
 				Instant start = Instant.now();
 				GreetingResponse gr = new GreetingResponse(this.getEventData());
 				emitter.send(gr);
-				log.info("Sent to client, took: {}", Duration.between(start, Instant.now()));
+				//log.info("Sent to client, took: {}", Duration.between(start, Instant.now()));
 			} catch (Exception ignore) {
 				deadEmitters.add(emitter);
 			}
@@ -123,20 +123,6 @@ public class CarController {
 		return theData;
 	}
 
-	private String getNullData() throws ParseException {
-		// car controller is the observer
-		// examplefilter is the observable
-		this.setIsEvent(false);
-		JSONParser parser = new JSONParser();
-		JSONObject jsonObject = new JSONObject();
-		String timeNow = Instant.now().toString();
-		String evtData = "no rest api calls";
-		String toParse = "{\"message\":\"" + evtData + "\"}";
-		// log.info(toParse);
-		JSONObject json = (JSONObject) parser.parse(toParse);
-		String theData = json.toJSONString();
-		return theData;
-	}
 
 	@GetMapping("/stream-sse2")
 	public Flux<ServerSentEvent<String>> streamEvents2() {
