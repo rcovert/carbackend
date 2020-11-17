@@ -32,9 +32,9 @@ public class ExampleFilter implements Filter {
 	public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
 			throws IOException, ServletException {
 		log.info("from filter: " + ((HttpServletRequest) servletRequest).getMethod());
-		String data = ((HttpServletRequest) servletRequest).getMethod();
+		//String data = ((HttpServletRequest) servletRequest).getMethod();
 		// send only events that are not GET
-		if (!data.equalsIgnoreCase("GET")) myEventPublisherBean.sendMsg("To Listener:  Method received: " + data);
+		///if (!data.equalsIgnoreCase("GET")) myEventPublisherBean.sendMsg("To Listener:  Method received: " + data);
 
 		filterChain.doFilter(servletRequest, servletResponse);
 	}

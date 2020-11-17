@@ -26,9 +26,9 @@ import com.arc.cardemo.domain.UserRepository;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
-@EnableAsync
+//@EnableAsync
 @SpringBootApplication
-public class CardemoApplication implements AsyncConfigurer {
+public class CardemoApplication extends SpringBootServletInitializer {
 
 	@Autowired
 	private CarRepository repository;
@@ -36,25 +36,25 @@ public class CardemoApplication implements AsyncConfigurer {
 	private OwnerRepository orepository;
 	@Autowired
 	private UserRepository urepository;
-	
+
 	@Autowired
 	private static ApplicationContext context;
-	
-	@Override
-	   public Executor getAsyncExecutor() {
-	      ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-	      executor.setThreadNamePrefix("sse-");
-	      executor.setCorePoolSize(2);
-	      executor.setMaxPoolSize(100);
-	      executor.setQueueCapacity(5);
-	      executor.initialize();
-	      return executor;
-	   }
 
-	   @Override
-	   public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {
-	      return new SimpleAsyncUncaughtExceptionHandler();
-	   }
+//	@Override
+//	public Executor getAsyncExecutor() {
+//		ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+//		executor.setThreadNamePrefix("sse-");
+//		executor.setCorePoolSize(2);
+//		executor.setMaxPoolSize(100);
+//		executor.setQueueCapacity(5);
+//		executor.initialize();
+//		return executor;
+//	}
+//
+//	@Override
+//	public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {
+//		return new SimpleAsyncUncaughtExceptionHandler();
+//	}
 
 	public static void main(String[] args) {
 		context = SpringApplication.run(CardemoApplication.class, args);
@@ -98,4 +98,3 @@ public class CardemoApplication implements AsyncConfigurer {
 	}
 
 }
-
