@@ -41,7 +41,7 @@ public class CarController {
 
 	private String EventData;
 	private Boolean isEvent = false;
-	static final long SSE_SESSION_TIMEOUT = 2 * 60 * 1000L;
+	static final long SSE_SESSION_TIMEOUT = 15 * 60 * 1000L;
 	private final Set<SseEmitter> clients = new CopyOnWriteArraySet<>();
 
 	public Boolean getIsEvent() {
@@ -73,6 +73,7 @@ public class CarController {
 		clients.forEach(emitter -> {
 			try {
 				//Instant start = Instant.now();
+				
 				GreetingResponse gr = new GreetingResponse(this.getEventData());
 				emitter.send(gr);
 				//log.info("Sent to client, took: {}", Duration.between(start, Instant.now()));
@@ -93,6 +94,10 @@ public class CarController {
 		emitter.onTimeout(() -> {
 			log.info("client timed out..." + emitter.hashCode());
 			emitter.complete();
+			clients.remove(emitter);
+		});
+		emitter.onError((e) -> {
+			log.info("client in error state.. removing client");
 			clients.remove(emitter);
 		});
 		emitter.onCompletion(() -> clients.remove(emitter));
