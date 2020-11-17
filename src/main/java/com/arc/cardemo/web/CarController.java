@@ -60,8 +60,8 @@ public class CarController {
 		EventData = eventData;
 	}
 
-	@Autowired
-	private CarRepository repository;
+//	@Autowired
+//	private CarRepository repository;
 
 	// this will register the bean as a listener
 	@EventListener
@@ -105,10 +105,11 @@ public class CarController {
 		return emitter;
 	}
 
-	@RequestMapping("/cars")
-	public Iterable<Car> getCars() {
-		return repository.findAll();
-	}
+//	@RequestMapping("/cars")
+//	public Iterable<Car> getCars() {
+//		log.info("this may be the place to use events after call to repository");
+//		return repository.findAll();
+//	}
 
 	@GetMapping("/stream-sse")
 	public Flux<ServerSentEvent<String>> streamEvents() {
