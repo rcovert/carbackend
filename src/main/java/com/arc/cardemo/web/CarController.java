@@ -1,5 +1,6 @@
 package com.arc.cardemo.web;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalTime;
@@ -10,6 +11,7 @@ import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -18,11 +20,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;
 import org.springframework.http.MediaType;
 import org.springframework.http.codec.ServerSentEvent;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.request.async.AsyncRequestTimeoutException;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 import com.arc.cardemo.domain.Car;
@@ -60,10 +66,9 @@ public class CarController {
 		EventData = eventData;
 	}
 
-//	@Autowired
-//	private CarRepository repository;
 
 	// this will register the bean as a listener
+	@Async
 	@EventListener
 	public void onMyEvent(MyEvent event) {
 		log.info("Event received: " + event.getMsg());
@@ -73,7 +78,6 @@ public class CarController {
 		clients.forEach(emitter -> {
 			try {
 				//Instant start = Instant.now();
-				
 				GreetingResponse gr = new GreetingResponse(this.getEventData());
 				emitter.send(gr);
 				//log.info("Sent to client, took: {}", Duration.between(start, Instant.now()));
@@ -104,7 +108,16 @@ public class CarController {
 
 		return emitter;
 	}
+	
+	@ExceptionHandler(value = AsyncRequestTimeoutException.class)
+	   public ModelAndView handleTimeout(HttpServletResponse rsp) throws IOException {
+	      if (!rsp.isCommitted()) {
+	         rsp.sendError(HttpServletResponse.SC_SERVICE_UNAVAILABLE);
+	      }
+	      return new ModelAndView();
+	   }
 
+//	don't need this since spring rest repository provides automatically 
 //	@RequestMapping("/cars")
 //	public Iterable<Car> getCars() {
 //		log.info("this may be the place to use events after call to repository");
