@@ -2,9 +2,9 @@ package com.arc.cardemo.domain;
 
 import java.time.Instant;
 
-import javax.persistence.PrePersist;
-import javax.persistence.PreRemove;
-import javax.persistence.PreUpdate;
+import javax.persistence.PostPersist;
+import javax.persistence.PostRemove;
+import javax.persistence.PostUpdate;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -18,13 +18,21 @@ public class AuditListener {
 	@Autowired
 	MyEventPublisherBean myEventPublisherBean;
 	
-	@PrePersist
-    @PreUpdate
-    @PreRemove
-    private void beforeAnyOperation(Object object) { 
+	@PostPersist
+	private void beforeAnySave(Object object) { 
+		myEventPublisherBean.sendMsg("Change data event: POST @ ");
+	}
+    
+	@PostUpdate
+	private void beforeAnyUpdate(Object object) { 
+		myEventPublisherBean.sendMsg("Change data event: PUT @ ");
+	}
+    
+    @PostRemove
+    private void beforeAnyDelete(Object object) { 
 		//log.info("change event happening on JPA...");
-		String data = "Change data event @ " + Instant.now();
-		myEventPublisherBean.sendMsg("To Listener:  Method received: " + data);
+		String data = "Change data event: DELETE @ ";
+		myEventPublisherBean.sendMsg("Change data event: DELETE @ ");
 	}
     
 }

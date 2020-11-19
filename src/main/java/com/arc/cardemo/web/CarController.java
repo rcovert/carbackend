@@ -46,17 +46,10 @@ import reactor.core.publisher.Flux;
 public class CarController {
 
 	private String EventData;
-	private Boolean isEvent = false;
+	
 	static final long SSE_SESSION_TIMEOUT = 15 * 60 * 1000L;
 	private final Set<SseEmitter> clients = new CopyOnWriteArraySet<>();
 
-	public Boolean getIsEvent() {
-		return isEvent;
-	}
-
-	public void setIsEvent(Boolean isEvent) {
-		this.isEvent = isEvent;
-	}
 
 	public String getEventData() {
 		return EventData;
@@ -71,16 +64,14 @@ public class CarController {
 	@Async
 	@EventListener
 	public void onMyEvent(MyEvent event) {
-		log.info("Event received: " + event.getMsg());
-		setEventData("Event received: " + event.getMsg());
-		//this.setIsEvent(true);
+		log.info(event.getMsg());
+		setEventData(event.getMsg());
+
 		List<SseEmitter> deadEmitters = new ArrayList<>();
 		clients.forEach(emitter -> {
 			try {
-				//Instant start = Instant.now();
-				
-				GreetingResponse gr = new GreetingResponse(this.getEventData());
-				emitter.send(gr);
+				EventResponse er = new EventResponse(this.getEventData());
+				emitter.send(er);
 				//log.info("Sent to client, took: {}", Duration.between(start, Instant.now()));
 			} catch (Exception ignore) {
 				deadEmitters.add(emitter);
@@ -89,6 +80,7 @@ public class CarController {
 		clients.removeAll(deadEmitters);
 	}
 
+	// this is the event source for the client apps
 	@RequestMapping(value = "/stream-sse4", method = RequestMethod.GET)
 	public SseEmitter events(HttpServletRequest request) {
 		log.info("SSE stream opened for client: " + request.getRemoteAddr());
@@ -106,7 +98,6 @@ public class CarController {
 			clients.remove(emitter);
 		});
 		emitter.onCompletion(() -> clients.remove(emitter));
-
 		return emitter;
 	}
 	
@@ -131,58 +122,19 @@ public class CarController {
 						.data("SSE - " + LocalTime.now().toString()).build());
 	}
 
-	private String getTheData() throws ParseException {
-		// car controller is the observer
-		// examplefilter is the observable
-		JSONParser parser = new JSONParser();
-		JSONObject jsonObject = new JSONObject();
-		String timeNow = Instant.now().toString();
-		String evtData = getEventData();
-		String toParse = "{\"message\":\"" + evtData + "\"}";
-		log.info(toParse);
-		JSONObject json = (JSONObject) parser.parse(toParse);
-		String theData = json.toJSONString();
-		this.setIsEvent(false);
-		return theData;
-	}
-
-
-	@GetMapping("/stream-sse2")
-	public Flux<ServerSentEvent<String>> streamEvents2() {
-
-		if (this.isEvent) {
-			return Flux.interval(Duration.ofMillis(500)).map(sequence -> {
-				try {
-					this.setIsEvent(false);
-					return ServerSentEvent.<String>builder().id(String.valueOf(sequence)).event("message")
-							.data(getTheData()).build();
-				} catch (ParseException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				return null;
-			});
-		} else {
-			return Flux.never();
-		}
-	}
 
 	@RequestMapping("/stream-sse3")
 	@ResponseBody
 	public SseEmitter getPricing() {
-
 		SseEmitter emitter = new SseEmitter();
 		log.info("setting sse emitter...");
-
 		new Thread(new Runnable() {
-
 			@Override
 			public void run() {
-
 				for (int x = 0; x < 20; x++) {
 					try {
 						String ji = new Integer(new Random().nextInt(10) + 1).toString();
-						GreetingResponse gr = new GreetingResponse(ji);
+						EventResponse gr = new EventResponse(ji);
 						// emitter.send(new Random().nextInt(10)+1);
 						emitter.send(gr);
 						Thread.sleep(1000);
@@ -194,7 +146,6 @@ public class CarController {
 			}
 
 		}).start();
-
 		return emitter;
 	}
 
@@ -220,6 +171,6 @@ public class CarController {
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-class GreetingResponse {
+class EventResponse {
 	private String message;
 }
